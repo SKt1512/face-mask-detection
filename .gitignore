@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# TensorFlow
+*.tf
+*.tflite
+*.lite
+*.tfl
+*.pb
+# Keep saved_model.pb usually, but if it's large we might ignore. 
+# The user likely wants to push the model so we will NOT ignore .pb for now unless they are huge. 
+# Wait, standard .gitignore for TF usually doesn't ignore .pb unless generated.
+# Let's keep specific large files out if needed, but for this project the model is the core.
+# However, user's saved_model.pb is 1.7MB which is fine.
+
+# Streamlit
+.streamlit/
+!/.streamlit/config.toml
+
+# Virtual Env
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
