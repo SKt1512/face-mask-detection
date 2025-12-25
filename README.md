@@ -54,5 +54,3 @@ A deep learning-based application to detect whether a person is wearing a face m
 - **Input**: Images resized to 224x224
 - **Output**: Bounding box coordinates and Class probabilities
 
-## License
-MIT
